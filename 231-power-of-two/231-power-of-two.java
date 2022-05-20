@@ -1,11 +1,6 @@
-class Solution {
+public class Solution {
+
     public boolean isPowerOfTwo(int n) {
-        long i=1;
-        while(i<n)
-        {
-            i*=2;
-            
-        }
-        return n==i;
+        return n > 0 && (n & (n - 1)) == 0;
     }
 }
