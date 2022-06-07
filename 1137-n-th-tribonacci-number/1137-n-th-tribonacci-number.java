@@ -11,10 +11,12 @@ class Solution {
         dp[2]=1;
         if(n==2)
             return 1;
-        for(int i=3;i<n+1;i++)
-        {
-            dp[i]=dp[i-3]+dp[i-1]+dp[i-2];
-        }
-        return dp[n];
+        return f(n,dp);
+    }
+    public int f(int n,int dp[])
+    {
+        if(dp[n]!=-1)
+            return dp[n];
+        return dp[n]=f(n-1,dp)+f(n-2,dp)+f(n-3,dp);
     }
 }
