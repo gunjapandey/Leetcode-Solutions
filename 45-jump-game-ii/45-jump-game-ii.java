@@ -16,3 +16,5 @@ class Solution {
         return jump;
     }
 }
+//O(N) Time
+//O(1) Space
