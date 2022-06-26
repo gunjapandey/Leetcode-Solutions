@@ -14,4 +14,6 @@ public class Solution {
         }
         return isSigned?res+1:res;
     }
+    //TC:O(1)
+    //SC:O(1)
 }
