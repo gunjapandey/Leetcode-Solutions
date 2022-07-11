@@ -52,7 +52,7 @@ class Solution {
             for(int i : adjList) {
                 if(!visited[i]) {
                     visited[i] = true;
-                    q.add(i);   
+                q.add(i);   
                 }
             }
         }
